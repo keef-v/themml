@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head id="ctl00_ctl00_Head1">
+    <title>Sales MyLife - home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="mylifeStyles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="sales.css" />
+    <link rel="stylesheet" type="text/css" href="salesTheme.css" />
+    <link rel="stylesheet" type="text/css" href="new.css" />
+
+    <link rel="canonical" href="https://sales.mylifeportal.co.uk/home/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body id="ctl00_ctl00_masterbody" class="home">
+
+    <!-- Browser not supported modal -->
+    <!-- This should be at bottom of file! -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="infoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Browse Happy</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Hi,</p>
+                    <p>this website works best on the latest version of Internet Explorer and you appear to be using an older
+                        browser. You can dismiss this message and continue, but some screens might not work as well for you.</p>
+                    <p>You can find out more about upgrading your browser here: <a class="btn btn-primary" href="http://browsehappy.com/">Browse Happy</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="browsehappy_close" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Browser not supported modal -->
+
+    <div id='menu' class='menu-inv noindex'>
+        <ul>
+            <li id="mobilesearch" class="hidden-md hidden-lg">
+                <div id="mobilesearchlink"><span id="mobile-search-button" class="fa fa-search fa-2x"></span><label for="txtKeyWordMobileMenu" style="display: none">Search</label>
+                    <input name="ctl00$ctl00$MainNavigation1$txtKeyWordMobileMenu" type="text" id="txtKeyWordMobileMenu" Placeholder="Search"
+                    />
+                </div>
+            </li>
+            <li><a accesskey='H' href='https://sales.mylifeportal.co.uk/home' title="Home"><span class="icon-home fa-2x"></span> Home</a></li>
+            <li><a accesskey='G' href='https://sales.mylifeportal.co.uk/guides/guides.aspx' title="Guides"><span class="icon-info fa-2x"></span> Guides</a></li>
+            <li><a accesskey='M' href='https://sales.mylifeportal.co.uk/search/mypad.aspx' title="MyPad"><span class="icon-edit fa-2x"></span> MyPad</a></li>
+            <li>
+                <a accesskey='A' href='https://sales.mylifeportal.co.uk/secure/account/profile.aspx' title="My Account"><span class="icon-user fa-2x"></span> My Account</a>
+            </li>
+            <li><a accesskey='L' href='https://sales.mylifeportal.co.uk/account/login.aspx' title="Login"><span class="icon-signin fa-2x"></span> Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Cookies component -->
+    <!-- This is at top of file but appears at bottom of screen! -->
+    <div id="cookiesInfo" class="noindex">
+        <div id="cookiesInfoContent">
+            <h2 id="ctl00_ctl00_cookieconsentctrl_h2">Cookies</h2>
+            <p>We use cookies to ensure that we give you the best experience on our website. If you continue without changing
+                your settings, we'll assume that you are happy to receive cookies, but if you want, you can change your cookies
+                settings at any time.</p>
+            <ul>
+                <li id="continue">
+                    <span class="fa fa-ok-circle"></span>
+                    <input type="submit" name="ctl00$ctl00$cookieconsentctrl$lbConfirm"
+                        value="Continue" id="ctl00_ctl00_cookieconsentctrl_lbConfirm" title="Continue" class="btn btn-primary"
+                    />
+                </li>
+                <li id="findout">
+                    <span class="fa fa-question-circle"></span>
+                    <a href='https://sales.mylifeportal.co.uk/content/doc.aspx?id=10187'
+                        alt='Find out more'>Find out more</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Cookies component -->
+
+    <div id="main-wrapper">
+
+        <!-- Header -->
+        <header role="banner" class="noindex">
+            <div class="navbar noindex">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <button class="btn btn-navbar  navbar-toggle" id="menu-slide" title="Menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Mobile sidenav -->
+                        <div class="mobile-header-buttons-right">
+                            <div class="accessibility-dropdown  visible-xs visible-sm">
+                                <div class="dropdown">
+                                    <button class="hicontrast-mobile-button btn btn-default dropdown-toggle" title="Highcontrast modes" type="button" id="dropdownMenu1"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <span class="accessibility-mobile-image"></span>
+                                    </button>
+                                    <ul id="tcp-mobile" class="dropdown-menu tools tcp" aria-labelledby="dropdownMenu1">
+                                        <li><a href="javascript:void(0)" id="ctl00_ctl00_Header1_hicontrastYBMobile" class="hicontrastYB"
+                                                title="Turn on high contrast yellow text on black background">High Contrast 1</a></li>
+                                        <li><a href="javascript:void(0)" id="ctl00_ctl00_Header1_hicontrastBYMobile" class="hicontrastBY"
+                                                title="Turn on high contrast black text on yellow background">High Contrast 2</a></li>
+                                        <li><a href="javascript:void(0)" id="ctl00_ctl00_Header1_hicontrastResetMobile" class="hicontrastReset"
+                                                title="Turn off high contrast">Reset</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Mobile sidenav -->
+                        <!-- Logo -->
+                        <a href="/default.aspx" title="Go to homepage">Sales</a>
+
+                        <!-- Right of Header -->
+                        <div class="navbar-search">
+                            <h2>Search for</h2>
+                            <!-- Search component -->
+                            <div class="form form-search">
+                                <label for="txtKeyWord" class="overlabel" title="What?">What?</label>
+                                <input name="ctl00$ctl00$Header1$txtKeyWord" type="text" id="txtKeyWord" class="search-query" />
+                                <div id="pnlSearch" class="input-append">
+                                    <input type="submit" name="ctl00$ctl00$Header1$btnSubmit" value="Search this site" id="ctl00_ctl00_Header1_btnSubmit" title="Search this site"
+                                        class="btn" />
+                                </div>
+                            </div>
+                            <!-- End Search component -->
+                            <!-- Login -->
+                            <div class="form form-login">
+                                <a id="ctl00_ctl00_Header1_lnkLogin" title="Login" class="login" href="../Account/Login.aspx">Sign in</a>
+                            </div>
+                            <!-- End Login -->
+                        </div>
+                        <!-- End Right of Header -->
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <div class="main-nav">
+                <div id="headercontainer" class="container">
+                    <!-- Main menu, with keyboard access -->
+                    <ul id='mainmenu' class='nav nav-pills'>
+                        <li><a accesskey='H' href='#' title="Home"><span class="icon-home"></span> Home</a></li>
+                        <li><a accesskey='G' href='#' title="Guides"><span class="icon-info"></span> Guides</a></li>
+                        <li><a accesskey='M' href='#' title="MyPad"><span class="icon-edit"></span> MyPad</a></li>
+                        <li><a accesskey='A' href='#' title="My Account"><span class="icon-user"></span> My Account</a></li>
+                    </ul>
+                    <!-- End Main menu -->
+                    <!-- AAAAA -->
+                    <div id="page-tools">
+                        <ul id="tcp" class="tools tcp">
+                            <li><a href="javascript:void(0)" id="text-reduce" class="smaller" title="Reduce text size">Reduce text size</a></li>
+                            <li><a href="javascript:void(0)" id="text-default" class="normal" title="Default text size">Default text size</a></li>
+                            <li><a href="javascript:void(0)" id="text-increase" class="bigger" title="Increase text size">Increase text size</a></li>
+                            <li><a href="javascript:void(0)" id="ctl00_ctl00_Header1_hicontrastYB" class="hicontrastYB" title="Turn on high contrast yellow text on black background">Turn on high contrast yellow text on black background</a></li>
+                            <li><a href="javascript:void(0)" id="ctl00_ctl00_Header1_hicontrastBY" class="hicontrastBY" title="Turn on high contrast black text on yellow background">Turn on high contrast black text on yellow background</a></li>
+                        </ul>
+                        <div id="google_translate_element"></div>
+                        <!-- GT script reomved -->
+                    </div>
+                    <!-- End AAAAA -->
+                </div>
+            </div>
+            <!-- End Navbar -->
+        </header>
+        <!-- End Header -->
+
+
+
+        <!-- Main Content -->
+        <div class="main">
+            <!-- The semantically correct content element -->
+            <div id='content' role='main'>
+
+                <!-- Section (Image) -->
+                <!-- Start Image -->
+                <section id="#image-row">
+                    <div>
+                        <!-- Image items -->
+                        <div class="widget image-widget">
+                            <div class="image-wrap cover"><img title="A carer and elderly lady" alt="A young carer walks an elderley lady through a wooded park on a sunny day."
+                                    src="./images/header-1.jpg?targetTypeID=Res768" srcset="./images/header-1.jpg?targetTypeID=Res480 480w,./images/header-1.jpg?targetTypeID=Res768 768w,./images/header-1.jpg?targetTypeID=Res980 980w,./images/header-1.jpg?targetTypeID=Res1200 1200w,./images/header-1.jpg 2403w"
+                                /></div>
+                        </div>
+                        <a class="sr-only" href="#imagelongdescription"><img class="spacer" src="https://sales.mylifeportal.co.uk/widgets/SdsVideo/images/spacer.gif" alt="A carer and elderly lady"
+                            /></a>
+                        <section id="imagelongdescription" class="hidden">A young carer walks an elderley lady through a wooded park on a sunny day.
+                        </section>
+                        <!-- End Image items-->
+                    </div>
+                </section>
+                <!-- End Image -->
+                <!-- End Section (Image) -->
+
+                <!-- Section (Info Search) -->
+                <section id="#info-search-row" class="background1">
+                    <div class="container padding-lg">
+
+                        <!-- SdsInfoSearcher -->
+                        <div class="panel info-search">
+                            <h2>Quick Search</h2>
+                            <div class="thirds"><a href="../Search/SearchResultsFeatured.aspx?tagcat=392" id="btn-info-search-01" title="Choose &#39;Personal Assistants&#39; as your subject"
+                                    class="btn btn-primary btn-block btn-info-search"><i class="icon-user"></i><span>Personal Assistants</span></a></div>
+                            <div class="thirds">
+                                <a href="../Search/SearchResultsFeatured.aspx?tagcat=116" id="btn-info-search-11" title="Choose &#39;Advice Agencies&#39; as your subject"
+                                    class="btn btn-primary btn-block btn-info-search"><i class="icon-info"></i><span>Advice Agencies</span></a>
+                            </div>
+                            <div class="thirds last">
+                                <!-- With bootstrap we should not need a .last class; grids look after themselves -->
+                                <a href="../Search/SearchResultsFeatured.aspx?tagcat=118" id="btn-info-search-21" title="Choose &#39;Carers&#39; as your subject"
+                                    class="btn btn-primary btn-block btn-info-search"><i class="icon-group"></i><span>Carers</span></a>
+                            </div>
+                            <!-- (more) -->
+                        </div>
+                    </div>
+                </section>
+                <!-- End SdsInfoSearcher -->
+                <!-- Section -->
+
+                <!-- Another Section (Menu Panel) -->
+                <section id="#info-search-row">
+                    <div class="container padding-lg">
+
+                        <h2 id="r3">Advice and Information</h2>
+
+                        <div class="distribution row fivecolumns">
+                            <div class="col-lg-2 highlight background2">
+                                <a href="https://sales.mylifeportal.co.uk/local_offer/">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>Local Offer</h3>
+                                            <p>Find out more information about our local offer</p>
+                                        </div>
+                                        <img width="" height="" alt="Click here for more" title="local offer kids" src="https://sales.mylifeportal.co.uk/uploadedimages/local offer 400x266.jpg"
+                                            border="0" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 highlight background8">
+                                <a href="https://sales.mylifeportal.co.uk/adults/">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>Adults' Social Care</h3>
+                                            <p></p>
+                                        </div>
+                                        <img width="" height="" alt="Click here for more" title="adult care" src="https://sales.mylifeportal.co.uk/uploadedimages/smiling older man.jpg"
+                                            border="0" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 highlight background7">
+                                <a href="https://afdemo.mylifeportal.co.uk/">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>Adoption and Fostering</h3>
+                                            <p>Information for families</p>
+                                        </div>
+                                        <img width="" height="" alt="Click here for more" title="family piggyback" src="https://sales.mylifeportal.co.uk/uploadedimages/family piggy back.jpg"
+                                            border="0" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 highlight background6">
+                                <a href="https://sales.mylifeportal.co.uk/being_a_carer/">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>Information for carers</h3>
+                                            <p></p>
+                                        </div>
+                                        <img width="" height="" alt="Click here for more" title="younger and older lady" src="https://sales.mylifeportal.co.uk/uploadedimages/younger and older lady.jpg"
+                                            border="0" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 highlight background5">
+                                <a href="https://sales.mylifeportal.co.uk/be_a_volunteer/">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <h3>Volunteering</h3>
+                                            <p>Useful volunteering resources</p>
+                                        </div>
+                                        <img width="" height="" alt="Click here for more" title="volunteering" src="https://sales.mylifeportal.co.uk/uploadedimages/volunteering.jpg"
+                                            border="0" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End To Do ..............................  -->
+                        <!-- End Another Section (Menu Panel) -->
+                    </div>
+                </section>
+
+                <div class="clear"></div>
+                <!-- Shouldn't need clearfix after sections? -->
+            </div>
+
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-md-6 footer-text">
+                    <!-- Site can put HTML into left half -->
+                    <div class="row"></div>
+                </div>
+                <div class="col-md-6 env-info">
+                    <!-- Site can put 0, 1 or 2 columns of links into right half -->
+                    <ul class="footer-menu">
+                        <li><a href='https://sales.mylifeportal.co.uk/atoz/atoz.aspx'>A to Z</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li><a href='https://sales.mylifeportal.co.uk/content/doc.aspx?id=10187'>Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Copyright -->
+                <div class="col-md-12 copyright">An OLM Systems product. All rights reserved. &copy; 2016 OLM Systems Limited</div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+</body>
+
+</html>

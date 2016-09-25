@@ -1,0 +1,22 @@
+/* Fixes */
+.widget {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.spacer {
+    height: 0 !important;
+}
+/* End Fixes */
+
+.padding-lg {
+    padding: 5em 0;
+}
+
+.background1 {
+    background-color: #efefef;
+}
+
+.cover img {
+    width: 100%;
+}
