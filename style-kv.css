@@ -1,68 +1,6 @@
-#cookiesInfo {
-    background: #f7f9fa none repeat scroll 0 0;
-    bottom: 0;
-    left: 0;
-   /* position: fixed;*/
-     position: relative;
-    width: 100%;
-    z-index: 9999;
-
-
-
-}
-
-#cookiesInfoContent {
-    color: #000;
-    font-size: 0.8em;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 10px 0;
-    position: relative;
-    /*width: 750px; remove from main css*/
-
-}
-
-
-#cookiesInfoContent h2 {
-    color: #000;
-    display: inline-block; /* New kv*/
-    float: left;
-    font-size: 1.5em;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    width: 8%; /* New kv*/
-}
-
-#cookiesInfoContent p {
-    color: #000;
-    display: inline-block;/* New kv*/
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 80%; New kv
-}
-
-#cookiesInfoContent ul {
-    left: 575px;
-    list-style-type: none;
-    position: static;/* New kv*/
-    top: 16px;
-}
-
-#cookiesInfoContent ul {
-    left: 850px;
-    list-style-type: none;
-    position: absolute;
-    top: 16px;
-    display:inline-block;
-    color: #fff;
-}
-#cookiesInfoContent li#continue input  {
-	color: #fff !important;
-}
+/*Menu relies on class on bodyy ie. body.nav-close and body.nav-open*/
 #menu {
-    position: relative;
+    position: fixed; /*kv*/
     z-index: 300;
     width: 250px;
     top: 0;
@@ -79,7 +17,7 @@
     padding-left: 0;
     list-style: none;
     margin-left: 0;/* New kv*/
-    z-index: 500 !important;
+    z-index: 200 !important;
     padding-top: 3em;
 }
 
@@ -93,21 +31,97 @@
     left: 0; /* New kv*/
 }
 
+
+ .btn-navbar {
+    background-image: none;
+    margin: 15px 0 0 0;
+    padding: 8px;
+    text-shadow: none;
+    color: #fff;
+    border-bottom: 0;
+        border-radius: 2px;
+        position: fixed;
+        z-index: 300;
+}
+.btn-navbar:hover {
+    background-color: #15252d;
+        border-bottom: 0px solid transparent;
+}
+.btn-navbar {
+    background-color: #37474f;
+}
+.icon-bar {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+ .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+
+#cookiesInfo {
+    background: #f7f9fa none repeat scroll 0 0;
+    top: 0;
+    left: 0;
+   /* position: fixed;*/
+     position: fixed;
+    width: 100%;
+    z-index: 500;
+    bottom: auto;
+
+
+}
+
+#cookiesInfoContent {
+    color: #000;
+    font-size: 0.8em;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+    /*width: 750px; remove from main css*/
+
+}
+
+
+
+#cookiesInfoContent p {
+    color: #000;
+    display: inline-block;/* New kv*/
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 80%; 
+}
+
+
 #main-wrapper {
 	z-index: 50;
 	position: relative;
-}
-
-.menu-cookie-wrapper {
-	position: fixed;
-	top:0;
-	z-index: 500;
-	width: 100%;
-	height: 100%;
 }
 
 header {
 
     z-index: 0 !important;
 
+}
+
+#cookiesInfo a {
+    background-color: #303030;
+    border: 1px solid rgba(0,0,0,.1);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 19px;
+    padding: 4px 8px;
+    text-decoration: none;
+    white-space: nowrap;
 }
